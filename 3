@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two Frames Webpages</title>
+</head>
+<frameset rows="50%, 50%">
+    <frameset cols="50%, 50%">
+        <frame src="data:text/html;charset=utf-8,
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <title>Frame 1</title>
+                </head>
+                <body style='background-color: lightblue;'>
+                    <h1>Frame 1</h1>
+                    <p>This Frame has Light Blue Background</p>
+                </body>
+            </html>" name="f1">
+        <frame src="data:text/html;charset=utf-8,
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <title>Frame 2</title>
+                </head>
+                <body style='background-color: lightgreen;'>
+                    <h1>Frame 2</h1>
+                    <p>This Frame has Light Green Background</p>
+                </body>
+            </html>" name="f2">
+    </frameset>
+    <frameset cols="50%, 50%">
+        <frame src="data:text/html;charset=utf-8,
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <title>Frame 3</title>
+                </head>
+                <body style='background-color: lightcoral;'>
+                    <h1>Frame 3</h1>
+                    <p>This Frame has Light Coral Background</p>
+                </body>
+            </html>" name="f3">
+        <frame src="data:text/html;charset=utf-8,
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <title>Frame 4</title>
+                </head>
+                <body style='background-color: lightyellow;'>
+                    <h1>Frame 4</h1>
+                    <p>This Frame has Light Yellow Background</p>
+                </body>
+            </html>" name="f4">
+    </frameset>
+</frameset>
+<noframes>
+    <body>
+        <p>Page uses frames, but your browser does not support them.</p>
+    </body>
+</noframes>
+</html>
